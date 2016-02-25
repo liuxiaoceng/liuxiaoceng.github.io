@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:before, 
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a,a:visited {
+    color: #FFEB3B ;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #FF9800;
+}
+
+body { color: #FFFFFF;}
+
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+
+.section {  font: 50px "Microsoft Yahei"; color: #fff; position: relative;}
+.section1 { background-color: #BFDA00;}
+.section2 { background-color: #2EBE21;}
+.section3 { background-color: #2C3E50;}
+.section4 { background-color: #FF9900;}
+
+.section1 img { display: block; margin: 0 auto;}
+
+/*  card css begin */
+.card {
+	position: absolute;
+    width: 300px;
+    border-radius: 30px;
+    padding: 10px 20px;
+	font-size: 16px;
+    color: #000;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.card a { text-decoration: none; }
+.card a:hover { opacity: 0.7; }
+
+.card1 {
+    background: #FF0;
+    color: #000;
+    left: 45%;
+    top: 15%;
+}
+.card1 a { color: #000; }
+
+.card2 {
+    background: #E46F96;
+    color: #FFF;
+    right: 45%;
+    top: 15%;
+}
+.card2 a { color: #FFF;}
+
+.card3 {
+    background: #fd5;
+    background: #f37;
+    color: #FFF;
+    left: 45%;
+    top: 75%;
+}
+.card3 a { color: #FFF; }
+
+.card4 {
+    background: #ECA31C;
+    right: 45%;
+    top: 75%;
+}
+.card4 a { color: #000;}
+
+.active .card1,
+.active .card3 {
+    margin-left: -480px;
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+
+.active .card2,
+.active .card4 {
+    margin-right: -480px;
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+/*  card css end */
+
+.section .intro {
+		position: absolute;
+		width: 25%;
+		top: 20%;
+		left: 5%;
+		font-size: 17px;
+}
+.section2 img,
+.section3 img,
+.section4 img {
+	position: absolute;
+	width: 60%;
+	top: 20%;
+	right: 5%;
+}
+
+.intro .group {
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+.intro .group label {
+    width: 16%;
+    margin-right: 8px;
+    color: #555;
+    font-weight: bold;
+    text-align: right;
+}
+
+.intro .group .desc {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    word-wrap: break-word;
+    float: right;
+}
+
+.intro .group .desc li {
+    margin: 0.3em auto 0.3em 1.5em;
+    list-style-position: outside;    
+}
+
+.section5 {
+    text-align: center;
+}
+
+.item1 {
+    position: absolute;
+    width: 900px;
+    top: 25%;
+    left: 30%;
+    margin-left: -450px;
+    font-size: 30px; 
+    color: #FFF;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.active .item1 {
+    opacity: 1;
+    color: #000;
+    /*color: #00a0e9;*/
+    transition-delay: 1s;
+}
